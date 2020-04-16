@@ -1,10 +1,13 @@
+html, body { background-color: #c88; height: 100%;}
 
-#container{width: 70%; margin: 0 auto;padding: 1em 1.8em; }
+#container{width: 70%; height: 100%; margin: 0 auto; padding: 1em 1.8em; background-color: #fff; }
 
 #menu {	
 	height: 1.8em;
 	display: table;
 	font-size: 1em;
+	width: 100%;
+	text-align: center;
 }
 
 #menu > span{
@@ -15,6 +18,18 @@
 	vertical-align: middle;
 	background-color: #ddd;
 	color: black;
+}
+
+.menuit:link {color: green; font-weight: bold; text-decoration: none;}
+.menuit:visited {color: green; font-weight: bold; text-decoration: none;}
+.menuit:hover  {color: white; background-color: green; font-weight: bold; text-decoration: none;}
+.menuit:active {color: white;background-color: red; font-weight: bold; text-decoration: none;}				
+
+#header {
+	text-align: center;
+	font-size: 2.5em;
+	font-style: italic;
+	color: #33c;
 }
 
 #footer {
