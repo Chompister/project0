@@ -1,4 +1,4 @@
-html, body { background-color: #c88; height: 100%;}
+html, body { background-color: #c88; height: auto;}
 
 #container{width: 70%; height: 100%; margin: 0 auto; padding: 1em 1.8em; background-color: #fff; }
 
@@ -51,16 +51,4 @@ html, body { background-color: #c88; height: 100%;}
 	height: auto;
 	margin: auto;
 	
-}
-
-.texto{
-	
-	width: 60%;
-	margin: auto;
-}
-
-@media (max-width: 600px) {
-  .world {
-    display: none;
-  }
 }
