@@ -1,0 +1,68 @@
+html, body { background-color: #c88; height: 100%;}
+
+#container{width: 70%; height: 100%; margin: 0 auto; padding: 1em 1.8em; background-color: #fff; }
+
+#menu {	
+	height: 1.8em;
+	display: table;
+	font-size: 1em;
+	width: 100%;
+	text-align: center;
+}
+
+#menu > span{
+	width: 14em;
+	padding:  0.3em;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	background-color: #ddd;
+	color: black;
+}
+
+$color1: green; $color2: white; $color-b1: green; $color-b2: red;
+
+.menuit:link {color: $color1; font-weight: bold; text-decoration: none;}
+.menuit:visited {color: $color1; font-weight: bold; text-decoration: none;}
+.menuit:hover  {color: $color2; background-color: $color-b1; font-weight: bold; text-decoration: none;}
+.menuit:active {color: $color2;background-color: $color-b2; font-weight: bold; text-decoration: none;}				
+
+#header {
+	text-align: center;
+	font-size: 2.5em;
+	font-style: italic;
+	color: #33c;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	width: 70%;
+	background-color: #ddd;
+	color: blue;
+	font-size: 0.8em;
+	padding: 0.2em;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+
+.world {
+	display: block;
+	border-radius: 10%;
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+	
+}
+
+.texto{
+	
+	width: 60%;
+	margin: auto;
+}
+
+@media (max-width: 600px) {
+  .world {
+    display: none;
+  }
+}
