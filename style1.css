@@ -19,6 +19,7 @@ html, body {
 #menu > span {
   width: 14em;
   padding: 0.3em;
+  margin: 0 auto;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
@@ -47,11 +48,22 @@ html, body {
   font-weight: bold;
   text-decoration: none; }
 
-#header {
-  text-align: center;
-  font-size: 2.5em;
+h1, h2 {
   font-style: italic;
   color: #33c; }
+
+h1 {
+  font-size: 2.5em;
+  text-align: center; }
+
+h2 {
+  font-size: 1.8em;
+  text-align: left; }
+
+.caja {
+  margin: 0 auto;
+  padding-top: 4em;
+  width: 60%; }
 
 #footer {
   position: absolute;
@@ -64,15 +76,44 @@ html, body {
   margin-bottom: 0.5em;
   text-align: center; }
 
+.texto, li, table {
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 20px;
+  color: #008020; }
+
+.texto {
+  width: 60%;
+  margin: auto; }
+
+li {
+  paddle-left: 3em;
+  paddle-top: 3em; }
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse; }
+
+caption {
+  border: 1px solid black;
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  padding-left: 2e;
+  background-color: #dfe; }
+
+td {
+  border: 1px solid black;
+  padding-top: 0.5em;
+  padding-right: 2em;
+  padding-bottom: 0.5em;
+  padding-left: 2em; }
+
 .world {
   display: block;
   border-radius: 10%;
   max-width: 100%;
   height: auto;
-  margin: auto; }
-
-.texto {
-  width: 60%;
   margin: auto; }
 
 @media (max-width: 600px) {

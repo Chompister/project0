@@ -12,7 +12,7 @@ html, body { background-color: #c88; height: 100%;}
 
 #menu > span{
 	width: 14em;
-	padding:  0.3em;
+	padding:  0.3em;margin: 0 auto;
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
@@ -27,11 +27,28 @@ $color1: green; $color2: white; $color-b1: green; $color-b2: red;
 .menuit:hover  {color: $color2; background-color: $color-b1; font-weight: bold; text-decoration: none;}
 .menuit:active {color: $color2;background-color: $color-b2; font-weight: bold; text-decoration: none;}				
 
-#header {
-	text-align: center;
-	font-size: 2.5em;
+%header {
 	font-style: italic;
 	color: #33c;
+}
+
+h1{
+	@extend %header;
+	font-size: 2.5em;
+	text-align: center;
+	
+}
+
+h2{
+	@extend %header;
+	font-size: 1.8em;
+	text-align: left;
+}
+
+.caja{
+	margin: 0 auto;
+	padding-top: 4em;
+	width: 60%; 
 }
 
 #footer {
@@ -46,6 +63,48 @@ $color1: green; $color2: white; $color-b1: green; $color-b2: red;
 	text-align: center;
 }
 
+%texto-general{
+	font-family: sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    color: #008020;
+}
+
+.texto{
+	@extend %texto-general;
+	width: 60%;
+	margin: auto;
+}
+
+li {
+	@extend %texto-general;
+	paddle-left: 3em;
+	paddle-top: 3em;
+}
+
+table{
+	@extend %texto-general;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+caption {
+	border: 1px solid black;
+	padding-top: 1em;
+	padding-right: 2em;
+	padding-bottom: 1em;
+	padding-left: 2e;
+	background-color: #dfe;
+}
+
+td {
+	border: 1px solid black;
+	padding-top: 0.5em;
+	padding-right: 2em;
+	padding-bottom: 0.5em;
+	padding-left: 2em;
+}
+
 .world {
 	display: block;
 	border-radius: 10%;
@@ -53,12 +112,6 @@ $color1: green; $color2: white; $color-b1: green; $color-b2: red;
 	height: auto;
 	margin: auto;
 	
-}
-
-.texto{
-	
-	width: 60%;
-	margin: auto;
 }
 
 @media (max-width: 600px) {
