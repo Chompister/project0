@@ -1,6 +1,6 @@
 html, body { background-color: #c88; height: 100%;}
 
-#container{width: 70%; height: 100%; margin: 0 auto; padding: 1em 1.8em; background-color: #fff; }
+#container{width: 70%; min-height: 100%; margin: 0 auto; background-color: #fff;}
 
 #menu {	
 	height: 1.8em;
@@ -8,16 +8,8 @@ html, body { background-color: #c88; height: 100%;}
 	font-size: 1em;
 	width: 100%;
 	text-align: center;
-}
-
-#menu > span{
-	width: 14em;
-	padding:  0.3em;margin: 0 auto;
-	text-align: center;
-	display: table-cell;
 	vertical-align: middle;
 	background-color: #ddd;
-	color: black;
 }
 
 $color1: green; $color2: white; $color-b1: green; $color-b2: red;
@@ -36,6 +28,7 @@ h1{
 	@extend %header;
 	font-size: 2.5em;
 	text-align: center;
+	font-weight: bold;
 	
 }
 
@@ -52,15 +45,14 @@ h2{
 }
 
 #footer {
-	position: absolute;
 	bottom: 0;
-	width: 70%;
-	background-color: #ddd;
-	color: blue;
-	font-size: 0.8em;
-	padding: 0.2em;
-	margin-bottom: 0.5em;
+	margin: 0 auto;
+	width: 70%;	
 	text-align: center;
+	background-color: #ddd;
+	color: #00f;
+	font-size: 0.8em;
+	padding-top: 0.2em;
 }
 
 %texto-general{
@@ -82,6 +74,19 @@ li {
 	paddle-top: 3em;
 }
 
+.info{
+	color: #008020;
+	margin-top: 3em;
+	paddle: 3em;
+	font-size: 1.8em;
+}
+
+.info2{
+	color: #002080;
+	margin-left: 3em;
+	font-weight: bold;
+}
+
 table{
 	@extend %texto-general;
 	border: 1px solid black;
@@ -89,6 +94,8 @@ table{
 }
 
 caption {
+	caption-side: top;
+	text-align:center;
 	border: 1px solid black;
 	padding-top: 1em;
 	padding-right: 2em;
