@@ -10,10 +10,10 @@ index.html:	Introduction with a map with location in the world of the city
   There is @media query: in smallers screens the image is not shown.
   
 pag2.html:	Points of interest to visit.
-  An HTML unordered list (<ul>) is used to show the diferent places.
+  An HTML unordered list (ul) is used to show the diferent places.
   
 pag3.html:	Statistical and descriptive data of the city.
-  The data is presented in a table (<table>).
+  The data is presented in a table.
   
 pag4.html:	Contact page
 
